@@ -1,0 +1,144 @@
+
+/*@media (width <= 750px) { /*48em = 768px*/*/
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .35s, visibility .35s, height .35s;
+        overflow: hidden;
+        background: #000;
+        z-index: -1;
+    }
+
+    #hamburger-input{
+        display: none;
+    }
+
+    #hamburger-menu {
+        position: absolute;
+        top: 1.5em;
+        right: 1em;
+        width: 29px;
+        height: 29px;
+        display: none;
+        border: none;
+        padding: 0px;
+        margin: 0px;
+        font-family: var(--font-family-sp);
+        background: linear-gradient(
+            to bottom,
+            rgb(59, 56, 56), rgb(59, 56, 56) 20%,
+            #000 20%, #000 40%,
+            rgb(59, 56, 56) 40%, rgb(59, 56, 56) 60%,
+            #000 60%, #000 80%,
+            rgb(59, 56, 56) 80%, rgb(59, 56, 56) 100%
+        );
+    }
+
+    #hamburger-menu:hover {
+        background: linear-gradient(
+            to bottom,
+            var(--color-btn-border), var(--color-btn-border) 20%,
+            #000 20%, #000 40%,
+            var(--color-btn-border) 40%, var(--color-btn-border) 60%,
+            #000 60%, #000 80%,
+            var(--color-btn-border) 80%, var(--color-btn-border) 100%
+        );
+    }
+
+    #hamburger-menu:active {
+        margin: 1px;
+    }
+    #hamburger-menu #sidebar-menu {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        height: 100%;
+        background-color: #111111;
+        /*transition: 0.3s;*/
+        padding: 0px 10px;
+        box-sizing: border-box;
+    }
+    #hamburger-menu h3 {
+        color: var(--color-btn-border);
+        font-size: calc(var(--font-size-mb) + .5rem);
+        margin: 2rem 0;
+    }
+    #hamburger-menu h3:hover {
+        color: rgb(59, 56, 56);
+    }
+    #hamburger-menu h3:active {
+        scale: 1.1;
+        color: rgb(194, 192, 182);
+        margin-left: .2em;
+    }
+
+    #hamburger-menu ul {
+        padding-left: 0px;
+    }
+    #hamburger-menu li {
+        list-style-type: none;
+        line-height: 3rem;
+    }
+    #hamburger-menu a {
+        color: var(--color-text);
+        font-family: var(--font-family-gen);
+        font-size: calc(var(--font-size-ms) - .1rem);
+        text-decoration: none;
+    }
+    #hamburger-menu a:hover {
+        text-decoration: overline;
+    }
+    #hamburger-input:checked + #hamburger-menu #sidebar-menu {
+        visibility: visible;
+        left: 0;
+        z-index: 3;
+    }
+    #hamburger-input:checked ~ .overlay{
+        visibility: visible;
+        opacity: 0.4;
+    }
+/*}*/
+
+@media screen and (width <= 750px) {
+    #hamburger-menu {
+        display: inline;
+    }
+}
+
+@media screen and (width <= 550px) {
+    #hamburger-menu {
+        top: 1.2em;
+        right: .7em;
+        width: 25px;
+        height: 25px;
+    }
+}
+
+@media screen and (width <= 400px) {
+    #hamburger-menu {
+        top: 1em;
+        right: .7em;
+        width: 21px;
+        height: 21px;
+    }
+    #hamburger-menu h3 {
+        font-size: 1.7rem;
+        margin: 1rem 0;
+    }
+    #hamburger-menu a {
+        font-size: 1.1rem;
+    }
+}
+
+@media screen and (width <= 300px) {
+    #hamburger-menu {
+        top: .7em;
+    }
+}

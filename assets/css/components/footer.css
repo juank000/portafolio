@@ -1,0 +1,24 @@
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+.footer {
+    padding: 10px;
+    text-align: center;
+    background-color: #000;
+}
+
+.footer .footer-text p {
+    color: var(--color-text);
+    font-family: var(--font-family-gen);
+    font-size: var(--font-size-ms);
+    margin-bottom: .6em;
+}
+
+@media screen and (max-width:500px) {
+    .footer .footer-text p {
+        font-size: .9em;
+    }
+}

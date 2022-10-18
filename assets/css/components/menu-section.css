@@ -1,0 +1,13 @@
+/*Between Video @name and list items*/
+.menu-section {
+    display: flex;
+    align-items: center;
+    background-color: #000;
+    justify-content: space-around;
+}
+
+@media (width <= 750px) {
+    .menu-section {
+        justify-content: space-between;
+    }
+}

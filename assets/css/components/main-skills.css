@@ -1,0 +1,103 @@
+.skills {
+    background: var(--color-gradient-bg);
+    margin-bottom: .5em;
+}
+
+.skills .skills-title {
+    font-family: var(--font-family-sp);
+    font-size: var(--font-size-mb-sp);
+    color: var(--color-text-o);
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.skills-line{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.skills-line .skills-box {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    width: 20%;
+    padding: .2em 0;
+    margin: .5em;
+    border-radius: 5px;
+
+    box-shadow: var(--box-shadow-d);
+    filter: var(--drop-shadow-a);
+}
+
+.skills-line .skills-box .skills-box--img {
+    width: 75px;
+    height: 75px;
+    padding: 1.5em 0;
+}
+
+.skills-line .skills-box .skills-box--name {
+    font-family: var(--font-family-gen);
+    font-size: calc(var(--font-size-ms) - .1rem);
+    font-weight: bold;
+    color: var(--color-text-o)
+}
+
+
+@media (width <= 750px) {
+    .skills-line .skills-box .skills-box--name {
+        font-size: calc(var(--font-size-ms) - .3rem);
+    }
+}
+
+@media (width <= 550px) {
+    .skills-line .skills-box {
+        width: 19%;
+        padding: .1em 0;
+        margin: .2em;
+        margin-bottom: 1em;
+    }
+
+    .skills-line .skills-box .skills-box--img {
+        width: 40px;
+        height: 40px;
+        padding: 1em 0;
+    }
+
+    .skills-line .skills-box .skills-box--name {
+        font-size: calc(var(--font-size-ms) - .5rem);
+        font-weight: normal;
+    }
+}
+
+@media (width <= 450px) {
+    .skills-line .skills-box .skills-box--name {
+        font-size: calc(var(--font-size-ms) - .6rem);
+    }
+}
+
+@media (width <= 400px) {
+    .skills .skills-title {
+        font-size: calc(var(--font-size-mb-sp) - .5rem);
+    }
+}
+
+@media (width <= 370px) {
+    .skills-line .skills-box {
+        width: 17%;
+        padding: .2em;
+        margin-bottom: .5em;
+    }
+    .skills-line .skills-box .skills-box--img {
+        width: 30px;
+        height: 30px;
+        padding: 1em;
+    }
+}
+
+@media (width <= 300px) {
+    .skills-line .skills-box .skills-box--name {
+        font-size: calc(var(--font-size-ms) - .7rem);
+    }
+}

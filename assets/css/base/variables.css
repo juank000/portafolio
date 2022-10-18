@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster+Two:wght@400;700&display=swap');
+
+:root {
+    --font-family-sp: 'Lobster Two', cursive;
+    --font-family-gen: 'Comfortaa', cursive;
+
+    --font-size-b: 2.6rem;
+    --font-size-mb-sp: 1.9rem;
+    --font-size-mb: 1.5rem;
+    --font-size-ms: 1.2rem;
+    --font-size-s: 1rem;
+
+    --color-text:  #d6d5d5;
+    --color-text-o: rgb(56, 50, 50);
+    --color-lg: #ccc2bd;
+    --color-btn-border: #797467;
+    --color-gradient-bg: -webkit-radial-gradient(top, #cecece, #e0e0e0);
+
+    --color-warning: #fd7272;
+    --color-success: #b8fcb5;
+
+    --box-shadow-d: 1px 1px 4px rgb(58, 57, 57);
+    --box-shadow-u: -1px -1px 4px rgb(58, 57, 57);
+
+    --drop-shadow-a: drop-shadow(-.2em -.2em .2em rgb(87, 84, 85));
+    --drop-shadow-b: drop-shadow(0 0 0.6rem rgb(175, 161, 167));
+    --drop-shadow-c: drop-shadow(0 -1mm 2mm rgb(160, 0, 210));
+
+}

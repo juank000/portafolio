@@ -1,0 +1,55 @@
+/*Between video and @name*/
+.menu-header {
+    display: flex;
+    align-items: center;
+}
+
+.menu-video {
+    position: relative;
+    width: 12vw;
+}
+
+.menu-video-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 95%;
+    height: 95%;
+    object-fit: cover;
+}
+
+.menu-logo {
+    mix-blend-mode: multiply;
+    background-color: #000;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.menu-title {
+    font-family: var(--font-family-sp);
+    font-size: var(--font-size-mb);
+    font-weight: bold;
+    color: var(--color-text);
+}
+
+/*----------------------------------------------*/
+@media screen and (max-width: 500px) {
+    .menu-video {
+        width: 15vw;
+    }
+    .menu-video-bg {
+        width: 90%;
+        height: 90%;
+    }
+
+    .menu-logo {
+        width: 95%;
+        height: 95%;
+    }
+
+    .menu-title {
+        font-size: 1rem;
+        font-weight: normal;
+    }
+}

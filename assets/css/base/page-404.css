@@ -1,0 +1,46 @@
+
+.bl-page404 h1 {
+    font-family: var(--font-family-sp);
+    font-size: var(--font-size-b);
+    text-align: center;
+}
+
+.bl-page404 p {
+    font-family: var(--font-family-gen);
+    font-size: var(--font-size-ms);
+    text-align: center;
+    color: var(--color-warning);
+}
+
+.bl-page404 p span {
+    font-family: var(--font-family-gen);
+    font-size: var(--font-size-mb);
+    font-weight:bold;
+    text-align: center;
+}
+
+.bl-page404 p span a {
+    font-family: var(--font-family-gen);
+    font-size: var(--font-size-ms);
+    background-color:  var(--color-warning);
+    color: #FFF;
+    text-decoration: none;
+    padding: .6rem .4rem;
+    border-radius: 5px;
+}
+
+.bl-page404 p span a:hover {
+    border: 1px solid var(--color-warning);
+    color: rgb(46, 45, 45);
+}
+.bl-page404 p span a:active {
+    padding: .7em .2rem;
+}
+
+.bl-page404--wrapper {
+    text-align: center;
+}
+
+.bl-page404--wrapper img {
+    width: 60vw;
+}

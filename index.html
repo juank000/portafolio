@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="./assets/css/base/reset.css">
+    <link rel="stylesheet" href="./assets/css/base/index.css">
+    <link rel="stylesheet" href="./assets/css/base/variables.css">
+
+    <link rel="stylesheet" href="./assets/css/components/menu-section.css">
+    <link rel="stylesheet" href="./assets/css/components/menu-header.css">
+    <link rel="stylesheet" href="./assets/css/components/menu-nav.css">
+    <link rel="stylesheet" href="./assets/css/components/menu-nav-hamburger.css">
+
+    <link rel="stylesheet" href="./assets/css/components/title-container-hero.css">
+    <link rel="stylesheet" href="./assets/css/components/title-container-text.css">
+    <link rel="stylesheet" href="./assets/css/components/title-container-network.css">
+
+    <link rel="stylesheet" href="./assets/css/components/main-about-me.css">
+    <link rel="stylesheet" href="./assets/css/components/main-hobbies.css">
+    <link rel="stylesheet" href="./assets/css/components/main-skills.css">
+    <link rel="stylesheet" href="./assets/css/components/main-academic.css">
+    <link rel="stylesheet" href="./assets/css/components/main-experience.css">
+    <link rel="stylesheet" href="./assets/css/components/main-contact.css">
+
+    <link rel="stylesheet" href="./assets/css/components/footer.css">
+
+    <!-- Title and Favicon -->
+    <title>Portafolio JuanC</title>
+    <link rel="icon" type="image/x-icon" href="./assets/imgs-vids/ico-profile-2.png">
+
+</head>
+<body>
+    <!-- Header Menu Section -->
+    <section class="menu-section">
+        <header class="menu-header">
+            <div class="menu-video">
+                <video class="menu-video-bg" src="./assets/imgs-vids/video-bg-2.mp4" autoplay muted preload loop></video>
+                <img class="menu-logo" src="./assets/imgs-vids/logo-profile.png" alt="icon JuanC">
+            </div>
+            <h2 class="menu-title">JuanC</h2>
+        </header>
+        <nav class="menu-nav">
+            <ul class="menu-list">
+                <li class="menu-list--item"><a href="#about">Sobre mi</a></li>
+                <li class="menu-list--item"><a href="#hobbies">Hobbies</a></li>
+                <li class="menu-list--item"><a href="#training">Formación</a></li>
+                <li class="menu-list--item"><a href="#xp">Proyectos</a></li>
+                <li class="menu-list--item"><a href="#contacto">juanc@email.com</a></li>
+            </ul>
+            <input type="checkbox" id="hamburger-input" class="burger-shower" />
+                <label id="hamburger-menu" for="hamburger-input">
+                <nav id="sidebar-menu">
+                    <h3>Menu</h3>
+                    <ul>
+                        <li><a href="#hobbies">Hobbies</a></li>
+                        <li><a href="#training">Formación</a></li>
+                        <li><a href="#xp">Proyectos</a></li>
+                        <li><a href="#contacto">Contacto</a></li>
+                    </ul>
+                </nav>
+            </label>
+            <div class="overlay"></div>
+        </nav>
+    </section>
+
+        <!-- Section Header/Title/Hero -->
+    <section class="title">
+        <div class="title-div">
+            <div class="title-div--container">
+                <img class="title-div--image" src="./assets/imgs-vids/img-landing.png" alt="code image">
+                <img class="title-div--profile" src="./assets/imgs-vids/photo-profile-1.png" alt="profile photo">
+                <div class="title-container">
+                    <div class="title-container--text">
+                        <h2 class="title-bio">Hola, mi nombre es Juan Carlos y soy Web Developer</h2>
+                        <h3 class="title-subsection">Actualmente estoy participando del proyecto Oracle ONE en Alura Latam.</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Social Icons -->
+        <ul class="title-container--network">
+            <li class="title-network--item"><a href="https://github.com/juank000" target="_blank"><i class="fa-brands fa-github-alt"></i><span class="tooltip">GitHub</span></a></li>
+            <li class="title-network--item"><a href="https://www.linkedin.com/" target="_blank"><i class="fa-brands fa-linkedin-in"></i><span class="tooltip">Linkedin</span></a></li>
+            <li class="title-network--item"><a href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i><span class="tooltip">Instagram</span></a></li>
+            <li class="title-network--item"><a href="page-404.html" target="_blank"><i class="fa-sharp fa-solid fa-file-pdf"></i><span class="tooltip">Curriculum Vitae</span></a></li>
+        </ul>
+    </section>
+
+    <main>
+    <!-- About me -->
+    <section class="about" id="about">
+        <h3 class="about-title">Sobre mi</h3>
+        <div class="about-container">
+            <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia.  </p>
+            <p class="about-paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque velit velit, volutpat semper dignissim dictum, imperdiet ut lacus. Quisque gravida ex a mattis pretium. Suspendisse potenti. Ut semper sagittis ligula et lacinia. Aenean sit amet felis venenatis, egestas metus vitae, aliquet metus.</p>
+            <!-- Sign here -->
+            <div class="about-container--img">
+            <img src="./assets/imgs-vids/signature.png" alt="signature">
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <h3 class="skills-title">Skills</h3>
+        <div class="skills-line">
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-html.png" alt="html icon"></li>
+                    <li class="skills-box--name">HTML</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-css.png" alt="css icon"></li>
+                    <li class="skills-box--name">CSS</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-js.png" alt="js icon"></li>
+                    <li class="skills-box--name">JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-bootstrap.png" alt="bootstrap icon"></li>
+                    <li class="skills-box--name">Bootstrap</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-figma.png" alt="figma icon"></li>
+                    <li class="skills-box--name">Figma</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-trello.png" alt="trello icon"></li>
+                    <li class="skills-box--name">Trello</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-nodejs.png" alt="node-js icon"></li>
+                    <li class="skills-box--name">NodeJS</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-java.png" alt="java icon"></li>
+                    <li class="skills-box--name">Java</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-python.png" alt="python icon"></li>
+                    <li class="skills-box--name">Python</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-mongodb.png" alt="mongo-db icon"></li>
+                    <li class="skills-box--name">MongoDB</li>
+                </ul>
+            </div>
+
+            <div class="skills-box">
+                <ul>
+                    <li class="skills-box--img"><img src="./assets/imgs-vids/sk-icon-mysql.png" alt="mysql icon"></li>
+                    <li class="skills-box--name">MySQL</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section class="hobbies">
+        <h2 class="hobbies-title">hobbies</h2>
+        <section class="hobbies-container" id="hobbies">
+            <div class="hobbies-line">
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-cooking.png" alt="steak icon"><h3 class="hobbies-box--text">Cocinar</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-videogames.png" alt="videogames icon"><h3 class="hobbies-box--text">Video Juegos</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-tv.png" alt="tv icon"><h3 class="hobbies-box--text">Series TV</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-music.png" alt="music icon"><h3 class="hobbies-box--text">Música</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-reading.png" alt="books icon"><h3 class="hobbies-box--text">Leer</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-running.png" alt="running icon"><h3 class="hobbies-box--text">Deportes</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-movie.png" alt="movie icon"><h3 class="hobbies-box--text">Cine</h3></div>
+
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-cooking.png" alt="steak icon"><h3 class="hobbies-box--text">Cocinar</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-videogames.png" alt="videogames icon"><h3 class="hobbies-box--text">Video Juegos</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-tv.png" alt="tv icon"><h3 class="hobbies-box--text">Series TV</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-music.png" alt="music icon"><h3 class="hobbies-box--text">Música</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-reading.png" alt="books icon"><h3 class="hobbies-box--text">Leer</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-running.png" alt="running icon"><h3 class="hobbies-box--text">Deportes</h3></div>
+                <div class="hobbies-box"><img src="./assets/imgs-vids/hb-icon-movie.png" alt="movie icon"><h3 class="hobbies-box--text">Cine</h3></div>
+            </div>
+        </section>
+    </section>
+
+    <!-- Academic Training Section -->
+    <section class="academic" id="training">
+        <h2 class="academic-title" >Formación académica</h2>
+        <div class="academic-courses">
+            <div class="academic-courses--box">
+                <ul class="academic-courses--list">
+                    <li class="academic-courses--item---img"><img src="./assets/imgs-vids/edu-icon-mintic-2.png" alt="tic logo"></li>
+                    <li class="academic-courses--item---title"><h4>Programación</h4></li>
+                    <li class="academic-courses--item---subtitle"><p>2021-2022</p></li>
+                </ul>
+            </div>
+            <div class="academic-courses--box">
+                <ul class="academic-courses--list">
+                    <li class="academic-courses--item---img"><img src="./assets/imgs-vids/edu-icon-coursera-2.png" alt="coursera icon"></li>
+                    <li class="academic-courses--item---title"><h4>Análisis de datos</h4></li>
+                    <li class="academic-courses--item---subtitle"><p>2020</p></li>
+                </ul>
+            </div>
+            <div class="academic-courses--box">
+                <ul class="academic-courses--list">
+                    <li class="academic-courses--item---img"><img src="./assets/imgs-vids/edu-icon-edx-2.png" alt="edx icon"></li>
+                    <li class="academic-courses--item---title"><h4>Desarrollo Web</h4></li>
+                    <li class="academic-courses--item---subtitle"><p>2019</p></li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="experience" id="xp">
+        <h2 class="experience-title" >Experiencia Profesional - Proyectos</h2>
+        <div class="experiencie-box">
+            <!-- Screenshot -->
+            <img class="experience-box--img" src="./assets/imgs-vids/project-encryptor-.png" alt="Encryptor Project">
+            <div class="experience-box--info">
+                <h2 class="experience-box--title">Encriptador de texto</h2>
+                <h3 class="experience-box--text">Challenge Alura <br> Codificador </h3>
+                    <div class="experience-box--description">
+                        <!-- Github - GithubPages link -->
+                            <span class="experience-repo"><a href="https://github.com/juank000/encriptador-jc-g3" target="_blank"><button class="experience-btn--repo">Repositorio</button></a></span>
+                            <span class="experience-demo"><a href="https://juank000.github.io/encriptador-jc-g3/" target="_blank"><button class="experience-btn--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="experiencie-box">
+            <!-- Screenshot -->
+            <img class="experience-box--img" src="./assets/imgs-vids/project-hangman-.png" alt="Hangman Project">
+            <div class="experience-box--info">
+                <h2 class="experience-box--title">Juego del ahorcado</h2>
+                <h3 class="experience-box--text">Challenge Alura <br> Ahorcado </h3>
+                    <div class="experience-box--description">
+                        <!-- Github - GithubPages link -->
+                            <span class="experience-repo"><a href="https://github.com/juank000/juego-ahorcado-jc-g3" target="_blank"><button class="experience-btn--repo">Repositorio</button></a></span>
+                            <span class="experience-demo"><a href="https://juank000.github.io/juego-ahorcado-jc-g3/" target="_blank"><button class="experience-btn--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="experiencie-box">
+            <!-- Screenshot -->
+            <img class="experience-box--img" src="./assets/imgs-vids/project-todo-app-.png" alt="todo app project">
+            <div class="experience-box--info">
+                <h2 class="experience-box--title">ToDo App</h2>
+                <h3 class="experience-box--text">Challenge Alura <br> ToDo App </h3>
+                    <div class="experience-box--description">
+                        <!-- Github - GithubPages link -->
+                            <span class="experience-repo"><a href="https://github.com/juank000/todo-app" target="_blank"><button class="experience-btn--repo">Repositorio</button></a></span>
+                            <span class="experience-demo"><a href="https://juank000.github.io/todo-app/" target="_blank"><button class="experience-btn--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>
+
+        <div class="experiencie-box">
+            <!-- Screenshot -->
+            <img class="experience-box--img" src="./assets/imgs-vids/project-form-.png" alt="form validations project">
+            <div class="experience-box--info">
+                <h2 class="experience-box--title">Formulario validaciones</h2>
+                <h3 class="experience-box--text">Challenge Alura <br> Validaciones Formulario </h3>
+                    <div class="experience-box--description">
+                        <!-- Github - GithubPages link -->
+                            <span class="experience-repo"><a href="https://github.com/juank000/validaciones-HTML" target="_blank"><button class="experience-btn--repo">Repositorio</button></a></span>
+                            <span class="experience-demo"><a href="https://juank000.github.io/validaciones-HTML/" target="_blank"><button class="experience-btn--demo">Ver demo</button></a></span>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contacto" id="contacto">
+        <div  class="contacto-form">
+            <div class="contacto-div--img">
+                <img class="contacto-form--img" src="./assets/imgs-vids/img-contact.webp" alt="contact image">
+            </div>
+            <div class="contacto-text">
+                <h2 class="contacto-title">Contacto</h2>
+                <h3 class="contacto-subtext">¿Quieres contactarme?</h3>
+                <h3 class="contacto-subtext">Complete el siguiente formulario y me pondré en contacto con usted lo antes posible. </h3>
+                <form class="contacto-fields" name="form">
+
+                    <div class="input-container">
+                        <input class="contacto-input input" id="input-name" type="text" name="nombre" placeholder="Nombre"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='Nombre'"
+                                            data-type="name" required pattern="[\s\S]{4,15}">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="contacto-input input" id="input-email" type="email" name="email" placeholder="E-mail"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='E-mail'"
+                                            data-type="email" required>
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <input class="contacto-input input" id="input-asunto" type="text" name="asunto" placeholder="Asunto"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='Asunto'"
+                                            data-type="asunto" required pattern="[\s\S]{5,20}">
+                        <span class="input-message-error">Este campo no es válido</span>
+                    </div>
+
+                    <div class="input-container">
+                        <textarea class="contacto-input contacto-textarea input" id="input-msj" rows="5" cols="40" id="message" name="mensaje" placeholder="Mensaje"
+                                            onfocus="this.placeholder=''" onblur="this.placeholder='Mensaje'"
+                                            data-type="msj" required minlength="20" maxlength="500"></textarea>
+                        <span class="input-message-error textarea-message-error">Este campo no es válido</span>
+                    </div>
+                    <!--<button type="submit" class="contacto-btn">Enviar mensaje</button>-->
+                </form>
+                <button type="submit" class="contacto-btn" onclick="reset()">Enviar mensaje</button>
+            </div>
+        </div>
+    </section>
+
+    </main>
+
+    <footer>
+        <!-- Sección de Footer -->
+        <section class="footer">
+            <div class="footer-text">
+                <p>Desarrollado por @JuanC</p>
+                <p>&copy2022</p>
+            </div>
+        </section>
+
+    </footer>
+
+    <script src="js/contact-validations.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,180 @@
+.experience {
+    background: var(--color-gradient-bg);
+    margin-bottom: .5em;
+}
+
+.experience .experience-title {
+    font-family: var(--font-family-sp);
+    font-size: var(--font-size-mb-sp);
+    color: var(--color-text-o);
+    text-align: center;
+    margin-bottom: 1em;
+    padding-top: 1em;
+}
+
+.experience .experiencie-box {
+    display: flex;
+    justify-content: center;
+}
+
+.experience .experiencie-box .experience-box--img {
+    width: 520px;
+}
+
+.experience .experiencie-box .experience-box--info {
+    width: 250px;
+    margin-top: 5em;
+    padding: 2em;
+    font-family: var(--font-family-gen);
+    font-size: var(--font-size-ms);
+    color: var(--color-text-o);
+}
+
+.experience .experiencie-box .experience-box--title {
+    /*font-size: var(--font-size-mb);*/
+    font-weight: bold;
+    margin-bottom: 1em;
+}
+
+.experience .experiencie-box .experience-box--description {
+    font-size: calc(var(--font-size-s) - .1rem);
+    margin-top: 2em;
+}
+
+.experience .experiencie-box .experience-box--description .experience-repo,
+.experience .experiencie-box .experience-box--description .experience-demo {
+    padding: 1em .6em;
+}
+.experience .experiencie-box .experience-box--description
+.experience-repo {
+    background-color: rgb(109, 109, 109);
+    border: 1px solid rgb(109, 109, 109);
+    color: var(--color-text);
+}
+.experience .experiencie-box .experience-box--description
+.experience-demo {
+    margin-left: 1em;
+    border: 1px solid var(--color-btn-border);
+}
+
+.experience .experiencie-box .experience-box--description .experience-btn--repo:hover {
+    color: var(--color-success);
+}
+.experience .experiencie-box .experience-box--description .experience-btn--demo:hover {
+    color: rgb(241, 241, 241);
+    text-shadow: 1.2px 1.2px 2px rgb(40, 40, 40);
+}
+.experience .experiencie-box .experience-box--description .experience-btn--repo:active {
+    scale: 1.1;
+}
+.experience .experiencie-box .experience-box--description .experience-btn--demo:active {
+    scale: 1.1;
+}
+
+
+@media (width <= 850px) {
+    .experience .experiencie-box .experience-box--description .experience-repo,
+    .experience .experiencie-box .experience-box--description .experience-demo {
+    display: block;
+    width: 65%;
+    margin-top: .6em;
+    text-align: center;
+    }
+    .experience .experiencie-box .experience-box--description
+    .experience-demo {
+        margin-left: 0;
+    }
+}
+
+@media (width <= 750px) {
+    .experience .experiencie-box {
+        display: block;
+        text-align: center;
+    }
+    .experience .experiencie-box .experience-box--img {
+        width: 450px;
+    }
+    .experience .experiencie-box .experience-box--info {
+        /*display: flex;*/
+        width: 60%;
+        margin-top: .2em;
+        margin-bottom: .5em;
+        margin-left: 20%;
+        padding: .4em;
+        font-size: calc(var(--font-size-ms) - .1rem);
+    }
+    .experience .experiencie-box .experience-box--title {
+        margin-bottom: .5em;
+    }
+
+    .experience .experiencie-box .experience-box--description {
+        margin-top: 1.5em;
+    }
+    .experience .experiencie-box:last-child .experience-box--description{
+        margin-bottom: 2.5em;
+    }
+
+    .experience .experiencie-box .experience-box--description .experience-repo,
+    .experience .experiencie-box .experience-box--description .experience-demo {
+    display: initial;
+    }
+}
+
+@media (width <= 550px) {
+    .experience .experience-title {
+        margin-bottom: .4em;
+    }
+    .experience .experiencie-box .experience-box--img {
+        width: 350px;
+    }
+    .experience .experiencie-box .experience-box--info {
+        width: 50%;
+        margin-top: 0;
+        margin-left: 25%;
+        padding: .1em;
+        font-size: calc(var(--font-size-ms) - .2rem);
+    }
+}
+
+@media (width <= 450px) {
+    .experience .experiencie-box .experience-box--img {
+        width: 250px;
+    }
+    .experience .experiencie-box .experience-box--info {
+        width: 80%;
+        margin-left: 10%;
+        font-size: calc(var(--font-size-ms) - .4rem);
+    }
+
+    .experience .experiencie-box .experience-box--description .experience-repo,
+    .experience .experiencie-box .experience-box--description .experience-demo {
+        padding: .7em .4em;
+    }
+    .experience .experiencie-box .experience-box--description .experience-btn--repo,
+    .experience .experiencie-box .experience-box--description .experience-btn--demo {
+        font-size: calc(var(--font-size-s) - .2rem);
+    }
+}
+
+@media (width <= 400px) {
+    .experience .experience-title {
+        font-size: calc(var(--font-size-mb-sp) - .5rem);
+    }
+}
+
+@media (width <= 350px) {
+    .experience .experiencie-box .experience-box--img {
+        width: 200px;
+    }
+    .experience .experiencie-box .experience-box--info {
+        font-size: calc(var(--font-size-ms) - .5rem);
+    }
+    .experience .experiencie-box .experience-box--description .experience-repo,
+    .experience .experiencie-box .experience-box--description .experience-demo {
+        padding: .4em .2em;
+    }
+    .experience .experiencie-box .experience-box--description .experience-btn--repo,
+    .experience .experiencie-box .experience-box--description .experience-btn--demo {
+        font-size: calc(var(--font-size-s) - .3rem);
+    }
+}

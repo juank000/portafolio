@@ -1,0 +1,182 @@
+@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css);
+
+.title-container--network {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 5px 0;
+    margin: .5em 0;
+
+    background: var(--color-gradient-bg);
+}
+
+/*-----------------------------------*/
+.title-container--network .title-network--item {
+    display: inline-block;
+    position: relative;
+    padding: .1em 0;
+    margin: 0 1em;
+    width: 8rem;
+}
+
+.title-container--network i {
+    color: rgb(167, 167, 164);
+    position: absolute;
+    top: 17%;
+    left: 42%;
+    transition: all 265ms ease-out;
+    font-size: 25px;
+}
+
+.title-container--network .fa-file-pdf {
+    left: 44%;
+}
+/*.title-container--network .fa-instagram {
+    left: 32%;
+}*/
+
+.title-container--network a::before {
+    transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    content: " ";
+    width: 40px;
+    height: 40px;
+    position: relative;
+    top: 4%;
+    left: 35%;
+    border-radius: 50%;
+    display: block;
+    background: linear-gradient(43deg, #535353 0%, #474447 46%, #302e30 100%);
+    transition: all 265ms ease-out;
+    margin-bottom: .5em;
+}
+
+.title-container--network a:hover::before {
+    transform: scale(0);
+    transition: all 265ms ease-in;
+}
+
+.title-container--network a:hover i {
+    transform: scale(2);
+    -ms-transform: scale(2);
+    -webkit-transform: scale(2);
+    color: #fff;
+    background: linear-gradient(90deg, #464545 0%, #504f50 46%, #636262 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: all 265ms ease-in;
+}
+/*-----------------------------------*/
+
+.title-container--network a .tooltip {
+    background-color: #000;
+    color: var(--color-text);
+    padding: .2em .4em;
+    border-radius: 10px;
+    font-family: var(--font-family-gen);
+    font-size: calc(var(--font-size-s) - .3rem);
+    transition: all .4s;
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: var(--box-shadow-d);
+}
+
+.title-container--network a:hover .tooltip {
+    opacity: 1;
+    visibility: visible;
+}
+
+@media (width <= 750px) {
+    .title-container--network .title-network--item {
+        width: 7rem;
+        margin: 0 .6em;
+    }
+
+    .title-container--network i {
+        font-size: 20px;
+        top: 19%;
+    }
+
+    .title-container--network .fa-linkedin-in {
+        left: 43%;
+    }
+
+    .title-container--network a::before {
+        width: 35px;
+        height: 35px;
+        margin-bottom: .25em;
+    }
+
+    .title-container--network a .tooltip {
+        font-size: 10px;
+    }
+}
+
+@media (width <= 650px) {
+    .title-container--network .title-network--item {
+        width: 6rem;
+    }
+    .title-container--network i {
+        font-size: 15px;
+        top: 21%;
+        left: 44%;
+    }
+
+    .title-container--network .fa-github-alt,
+    .title-container--network .fa-instagram {
+        left: 43%;
+    }
+    .title-container--network .fa-file-pdf {
+        left: 45%;
+    }
+
+    .title-container--network a::before {
+        width: 30px;
+        height: 30px;
+        margin-bottom: .2em;
+    }
+
+    .title-container--network a .tooltip {
+        font-size: 9px;
+    }
+}
+
+@media (width <= 500px) {
+    .title-container--network .title-network--item {
+        width: 5rem;
+        margin: 0 .1em;
+    }
+    .title-container--network i {
+        font-size: 12px;
+        top: 22%;
+        left: 44%;
+    }
+
+    .title-container--network .fa-github-alt {
+        left: 44%;
+    }
+    .title-container--network .fa-linkedin-in {
+        left: 44%;
+    }
+    .title-container--network .fa-instagram {
+        left: 45%;
+    }
+
+    .title-container--network a::before {
+        width: 26px;
+        height: 26px;
+        margin-bottom: .1em;
+    }
+    .title-container--network a .tooltip {
+        font-size: 7px;
+    }
+}
+
+@media (width <= 400px) {
+    .title-container--network a .tooltip {
+        opacity: 1;
+        visibility: visible;
+    }
+}
